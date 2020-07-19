@@ -1,0 +1,39 @@
+POST http://localhost:3000/v1/signup
+Content-Type: application/json
+
+{
+    "email": "bolida@email",
+    "password": "taybe"
+}
+
+###
+
+POST http://localhost:3000/v1/signin
+Content-Type: application/json
+
+{
+    "email": "doda@email.com",
+    "password": "tainalika"
+}
+
+###
+
+GET http://localhost:3000/v1/user
+
+###
+
+DELETE http://localhost:3000/v1/user/14
+Authorization: Bearer YourToken
+
+###
+GET http://localhost:3000/v1/user/12
+
+###
+
+PATCH  http://localhost:3000/v1/user/13
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEzLCJpYXQiOjE1OTUxNzAyMTcsImV4cCI6MTU5NTE3MTExN30.kALV-9qYT8YZfhTXs3jPMUkQDg_oitQ7Nv6skOjXFwg
+Content-Type: application/json
+
+{
+    "email": "doda@email.com"
+}
